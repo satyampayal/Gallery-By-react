@@ -1,10 +1,14 @@
 import React from "react";
-import Head from "./Components/Head";
+import GalleryApp from "./Components/GalleryApp";
+import {Routes,Route} from 'react-router-dom'
+import ImageDetails from "./Components/ImageDetails";
 function App(){
   return (
-    <>
-    <Head/>
-    </>
+    <Routes>
+      <Route path="/" element={< GalleryApp/>}/>
+      <Route path="/gallery/:id" element={<ImageDetails/>}/>
+   
+    </Routes>
   )
 
 }
