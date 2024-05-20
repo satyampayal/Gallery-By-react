@@ -7,6 +7,7 @@ function GalleryApp(){
         <>
          <Logo/>
          <Hero/>
+        
         </>
     )
 }
